@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.6" />
+    <PackageReference Include="MySql.EntityFrameworkCore" Version="8.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\BotanikBambu.Buisness\BotanikBambu.Buisness.csproj" />
     <ProjectReference Include="..\BotanikBambu.Data\BotanikBambu.Data.csproj" />
     <ProjectReference Include="..\BotanikBambu.Models\BotanikBambu.Models.csproj" />
