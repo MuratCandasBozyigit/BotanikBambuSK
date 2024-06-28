@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotanikBambu.Models", "..\B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotanikBambu.Repository", "..\BotanikBambu.Repository\BotanikBambu.Repository.csproj", "{BCCF8492-01B3-4CF5-8BE3-9978418D8F00}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotanikBambu.Buisness", "..\BotanikBambu.Buisness\BotanikBambu.Buisness.csproj", "{6225F986-C039-4884-8B88-C01B08DDB9B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{BCCF8492-01B3-4CF5-8BE3-9978418D8F00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCCF8492-01B3-4CF5-8BE3-9978418D8F00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCCF8492-01B3-4CF5-8BE3-9978418D8F00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6225F986-C039-4884-8B88-C01B08DDB9B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6225F986-C039-4884-8B88-C01B08DDB9B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6225F986-C039-4884-8B88-C01B08DDB9B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6225F986-C039-4884-8B88-C01B08DDB9B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
