@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace BotanikBambu.Models
 {
-    public class BaseModel
+    public class Cushionİnfo:Orderİnfo
     {
-        public int Id { get; set; }
+        public string cushionColor { get; set; }
+        public string cushionButtonNumber { get; set; }
+
     }
 }
