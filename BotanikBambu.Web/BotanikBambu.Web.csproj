@@ -6,4 +6,11 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BotanikBambu.Buisness\BotanikBambu.Buisness.csproj" />
+    <ProjectReference Include="..\BotanikBambu.Data\BotanikBambu.Data.csproj" />
+    <ProjectReference Include="..\BotanikBambu.Models\BotanikBambu.Models.csproj" />
+    <ProjectReference Include="..\BotanikBambu.Repository\BotanikBambu.Repository.csproj" />
+  </ItemGroup>
+
 </Project>
