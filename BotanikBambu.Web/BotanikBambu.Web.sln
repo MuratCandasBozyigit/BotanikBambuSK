@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotanikBambu.Web", "BotanikBambu.Web.csproj", "{65B0B56A-3D71-413F-97BD-5BB509CD8E7A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotanikBambu.Data", "..\BotanikBambu.Data\BotanikBambu.Data.csproj", "{7B77A49A-8629-45C8-A30C-2C45C23C464E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{65B0B56A-3D71-413F-97BD-5BB509CD8E7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65B0B56A-3D71-413F-97BD-5BB509CD8E7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65B0B56A-3D71-413F-97BD-5BB509CD8E7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B77A49A-8629-45C8-A30C-2C45C23C464E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B77A49A-8629-45C8-A30C-2C45C23C464E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B77A49A-8629-45C8-A30C-2C45C23C464E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B77A49A-8629-45C8-A30C-2C45C23C464E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
