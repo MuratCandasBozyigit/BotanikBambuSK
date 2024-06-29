@@ -40,9 +40,9 @@ namespace BotanikBambu.Business.Concrete
             return _customerRepository.Update(customerInfo);
         }
 
-        public bool Delete(int id)
+        public bool Delete(int customerId)
         {
-            return _customerRepository.Delete(id) is object;
+            return _customerRepository.Delete(customerId) is object;
         }
 
 

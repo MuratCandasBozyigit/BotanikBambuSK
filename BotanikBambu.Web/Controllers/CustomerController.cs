@@ -39,10 +39,10 @@ namespace BotanikBambu.Web.Controllers
         }
 
 
-        public IActionResult Delete(int id)
+        public IActionResult Delete(int customerId)
         {
            
-            return Ok(_customer.Delete(id) is object);
+            return Ok(_customer.Delete(customerId) is object);
         }
     }
 }
