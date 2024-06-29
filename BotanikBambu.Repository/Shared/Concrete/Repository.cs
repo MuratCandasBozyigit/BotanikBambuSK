@@ -2,6 +2,7 @@
 using BotanikBambu.Models;
 using BotanikBambu.Repository.Shared.Absract;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +22,8 @@ namespace BotanikBambu.Repository.Shared.Concrete
             _dbSet = dbSet;
             _context = context;
         }
+       
+
 
 
         public T Add(T entity)
@@ -83,5 +86,6 @@ namespace BotanikBambu.Repository.Shared.Concrete
             Save();
             return entity;
         }
+       
     }
 }

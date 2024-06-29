@@ -1,4 +1,7 @@
+﻿
+using BotanikBambu.Business.Configuration;
 using BotanikBambu.Data;
+
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,10 +10,18 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 
+
+builder.Services.RepositoryDI();
+builder.Services.BusinessDI();
+
+
+
 // Add database context
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySQL(
         builder.Configuration.GetConnectionString("DefaultConnection")));
+
+
 
 var app = builder.Build();
 

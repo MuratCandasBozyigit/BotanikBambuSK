@@ -22,7 +22,7 @@ namespace BotanikBambu.Business.Concrete
 
 
 
-       
+
         public Customerİnfo Add(Customerİnfo customerInfo)
         {
             return _customerRepository.Add(customerInfo);

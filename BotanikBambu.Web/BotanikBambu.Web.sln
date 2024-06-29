@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotanikBambu.Web", "BotanikBambu.Web.csproj", "{65B0B56A-3D71-413F-97BD-5BB509CD8E7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BotanikBambu.Web", "BotanikBambu.Web.csproj", "{65B0B56A-3D71-413F-97BD-5BB509CD8E7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotanikBambu.Data", "..\BotanikBambu.Data\BotanikBambu.Data.csproj", "{7B77A49A-8629-45C8-A30C-2C45C23C464E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BotanikBambu.Data", "..\BotanikBambu.Data\BotanikBambu.Data.csproj", "{7B77A49A-8629-45C8-A30C-2C45C23C464E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotanikBambu.Models", "..\BotanikBambu.Models\BotanikBambu.Models.csproj", "{0122B86E-F63F-48A5-88E0-BCB7074B4426}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BotanikBambu.Models", "..\BotanikBambu.Models\BotanikBambu.Models.csproj", "{0122B86E-F63F-48A5-88E0-BCB7074B4426}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotanikBambu.Repository", "..\BotanikBambu.Repository\BotanikBambu.Repository.csproj", "{BCCF8492-01B3-4CF5-8BE3-9978418D8F00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BotanikBambu.Repository", "..\BotanikBambu.Repository\BotanikBambu.Repository.csproj", "{BCCF8492-01B3-4CF5-8BE3-9978418D8F00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotanikBambu.Buisness", "..\BotanikBambu.Buisness\BotanikBambu.Buisness.csproj", "{6225F986-C039-4884-8B88-C01B08DDB9B5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotanikBambu.Business", "..\BotanikBambu.Business\BotanikBambu.Business.csproj", "{00E01774-77E9-4066-82F8-BDB5680D206F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{BCCF8492-01B3-4CF5-8BE3-9978418D8F00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCCF8492-01B3-4CF5-8BE3-9978418D8F00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCCF8492-01B3-4CF5-8BE3-9978418D8F00}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6225F986-C039-4884-8B88-C01B08DDB9B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6225F986-C039-4884-8B88-C01B08DDB9B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6225F986-C039-4884-8B88-C01B08DDB9B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6225F986-C039-4884-8B88-C01B08DDB9B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00E01774-77E9-4066-82F8-BDB5680D206F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00E01774-77E9-4066-82F8-BDB5680D206F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00E01774-77E9-4066-82F8-BDB5680D206F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00E01774-77E9-4066-82F8-BDB5680D206F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using BotanikBambu.Data;
 using BotanikBambu.Models;
-using BotanikBambu.Repository.Shared.Absract;
-using BotanikBambu.Buisness.Abstract;
+using BotanikBambu.Business.Concrete;
+using BotanikBambu.Business.Abstract;
 using System.ComponentModel.Design;
 namespace BotanikBambu.Web.Controllers
 {
