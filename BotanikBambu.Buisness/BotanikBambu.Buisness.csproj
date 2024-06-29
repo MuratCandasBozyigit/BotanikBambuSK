@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BotanikBambu.Models\BotanikBambu.Models.csproj" />
+    <ProjectReference Include="..\BotanikBambu.Repository\BotanikBambu.Repository.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BotanikBambu.Models
 {
-    public class Orderİnfo
+    public class Orderİnfo:BaseModel
     {
         public string orderId { get; set; }
         public string orderName { get; set; }
