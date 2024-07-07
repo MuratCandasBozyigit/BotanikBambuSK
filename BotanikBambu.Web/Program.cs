@@ -1,7 +1,5 @@
-﻿
-using BotanikBambu.Business.Configuration;
+﻿using BotanikBambu.Business.Configuration;
 using BotanikBambu.Data;
-
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,19 +7,14 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-
-
-builder.Services.RepositoryDI();
-builder.Services.BusinessDI();
-
-
-
-// Add database context
+// Register the DbContext first
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySQL(
         builder.Configuration.GetConnectionString("DefaultConnection")));
 
-
+// Register custom services
+builder.Services.RepositoryDI();
+builder.Services.BusinessDI();
 
 var app = builder.Build();
 
@@ -29,7 +22,6 @@ var app = builder.Build();
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 

@@ -2,36 +2,30 @@
 using BotanikBambu.Models;
 using BotanikBambu.Repository.Shared.Absract;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BotanikBambu.Repository.Shared.Concrete
 {
     public class Repository<T> : IRepository<T> where T : BaseModel
     {
-   private readonly ApplicationDbContext _context;
+        private readonly ApplicationDbContext _context;
         private readonly DbSet<T> _dbSet;
 
-        public Repository(DbSet<T> dbSet, ApplicationDbContext context)
+        public Repository(ApplicationDbContext context)
         {
-            _dbSet = dbSet;
-            _context = context;
+            _context = context ?? throw new ArgumentNullException(nameof(context));
+            _dbSet = _context.Set<T>();
         }
-       
-
-
 
         public T Add(T entity)
         {
             try
             {
                 _dbSet.Add(entity);
-             Save();
+                Save();
                 return entity;
             }
             catch
@@ -50,9 +44,11 @@ namespace BotanikBambu.Repository.Shared.Concrete
         public void Delete(int id)
         {
             T entity = _dbSet.Find(id);
-            entity.IsDeleted = true;
-
-            Update(entity);
+            if (entity != null)
+            {
+                entity.IsDeleted = true;
+                Update(entity);
+            }
         }
 
         public IQueryable<T> GetAll()
@@ -86,6 +82,5 @@ namespace BotanikBambu.Repository.Shared.Concrete
             Save();
             return entity;
         }
-       
     }
 }

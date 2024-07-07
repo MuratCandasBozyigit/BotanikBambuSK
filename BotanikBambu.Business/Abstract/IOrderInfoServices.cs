@@ -9,10 +9,10 @@ namespace BotanikBambu.Business.Abstract
 {
     public interface IOrderInfoServices
     {
-        IQueryable<Orderİnfo> GetAll(int orderId);
-        Orderİnfo Add(Orderİnfo orderInfo);
+        IQueryable<Truckerİnfo> GetAll(int orderId);
+        Truckerİnfo Add(Truckerİnfo orderInfo);
         bool Delete(int orderID);
-        Orderİnfo Update(Orderİnfo orderInfo);
+        Truckerİnfo Update(Truckerİnfo orderInfo);
       
 
     }

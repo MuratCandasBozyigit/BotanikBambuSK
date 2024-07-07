@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BotanikBambu.Models
 {
-    public class Cushionİnfo:Orderİnfo
+    public class Cushionİnfo:Truckerİnfo
     {
         public string cushionColor { get; set; }
         public string cushionButtonNumber { get; set; }

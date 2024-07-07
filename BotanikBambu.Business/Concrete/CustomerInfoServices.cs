@@ -9,49 +9,47 @@ using BotanikBambu.Models;
 
 using BotanikBambu.Repository.Shared.Absract;
 using Microsoft.Extensions.DependencyInjection;
+using BotanikBambu.Models;
+using BotanikBambu.Repository.Shared.Absract;
+
 namespace BotanikBambu.Business.Concrete
 {
     public class CustomerİnfoService : ICustomerİnfoService
     {
-        private readonly IRepository<Customerİnfo> _customerRepository;
+        private readonly IRepository<Customerİnfo> _repository;
 
-        public CustomerİnfoService(IRepository<Customerİnfo> customerRepository)
+        public CustomerİnfoService(IRepository<Customerİnfo> repository)
         {
-            _customerRepository = customerRepository;
+            _repository = repository;
         }
 
-
-
-
-        public Customerİnfo Add(Customerİnfo customerInfo)
-        {
-            return _customerRepository.Add(customerInfo);
-        }
-
-
-
-        public IQueryable<Customerİnfo> GetAll(int customerId)
-        {
-            return _customerRepository.GetAll();
-        }
-
-        public Customerİnfo Update(Customerİnfo customerInfo)
-        {
-            return _customerRepository.Update(customerInfo);
-        }
-
-        public bool Delete(int customerId)
-        {
-            return _customerRepository.Delete(customerId) is object;
-        }
-
-
-
-        public Customerİnfo GetById(int customerInfo)
+        public Customerİnfo Add(Customerİnfo category)
         {
             throw new NotImplementedException();
         }
 
+        public bool Delete(int categoryId)
+        {
+            throw new NotImplementedException();
+        }
 
+        public IQueryable<Customerİnfo> GetAll(int customerId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Customerİnfo GetById(int categoryId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Customerİnfo Update(Customerİnfo category)
+        {
+            throw new NotImplementedException();
+        }
+
+        // Implement ICustomerİnfoService methods...
     }
+
+   
 }

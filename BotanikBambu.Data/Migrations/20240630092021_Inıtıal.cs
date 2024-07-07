@@ -5,7 +5,7 @@
 namespace BotanikBambu.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class Initialize1 : Migration
+    public partial class Inıtıal : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

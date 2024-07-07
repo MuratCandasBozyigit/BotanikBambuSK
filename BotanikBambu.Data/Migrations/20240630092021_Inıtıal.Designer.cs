@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BotanikBambu.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240629123440_Initialize")]
-    partial class Initialize
+    [Migration("20240630092021_Inıtıal")]
+    partial class Inıtıal
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -4,7 +4,7 @@ using BotanikBambu.Models;
 using BotanikBambu.Business.Concrete;
 using BotanikBambu.Business.Abstract;
 using System.ComponentModel.Design;
-namespace BotanikBambu.Web.Controllers
+namespace BotanikBambu.Web.Areas.Admin.Controllers
 {
     public class CustomerController : Controller
     {
@@ -22,12 +22,12 @@ namespace BotanikBambu.Web.Controllers
 
         public IActionResult Add(Customerİnfo customer)
         {
-         
+
             return Ok(_customer.Add(customer));
         }
         public IActionResult Update(Customerİnfo customer)
         {
-           
+
             return Ok(_customer.Update(customer));
         }
 
@@ -41,7 +41,7 @@ namespace BotanikBambu.Web.Controllers
 
         public IActionResult Delete(int customerId)
         {
-           
+
             return Ok(_customer.Delete(customerId) is object);
         }
     }

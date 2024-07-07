@@ -1,19 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BotanikBambu.Models
+﻿namespace BotanikBambu.Models
 {
-    public class Truckerİnfo :BaseModel
+    public class Truckerİnfo : BaseModel
     {
-        public int truckerName {  get; set; }
-        public string truckerTelNo { get; set; }
-        public string truckPlateNo { get; set; }
-        public string truckColor { get; set; }
-        public string truckType { get; set; }
-        public DateTime receivedDate { get; set; }
-        public DateTime deliveryDate { get; set; }
+        public int TruckerName { get; set; }
+        public string TruckerTelNo { get; set; }
+        public string TruckPlateNo { get; set; }
+        public string TruckColor { get; set; }
+        public string TruckType { get; set; }
+        public DateTime ReceivedDate { get; set; }
+        public DateTime DeliveryDate { get; set; }
     }
 }

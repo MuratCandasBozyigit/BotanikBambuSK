@@ -9,11 +9,11 @@ namespace BotanikBambu.Business.Abstract
 {
     public interface ICustomerİnfoService
     {
-        IQueryable<Customerİnfo> GetAll(int customerId);
-        Customerİnfo Add(Customerİnfo category);
-        bool Delete(int categoryId);
-        Customerİnfo Update(Customerİnfo category);
+        IQueryable<Customerİnfo> GetAll(int customerİnfo);
+        Customerİnfo Add(Customerİnfo customerİnfo);
+        bool Delete(int customerId);
+        Customerİnfo Update(Customerİnfo customerİnfo);
 
-        Customerİnfo GetById(int categoryId);
+        Customerİnfo GetById(int customerId);
     }
 }

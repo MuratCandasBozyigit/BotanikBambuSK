@@ -17,6 +17,9 @@ namespace BotanikBambu.Business.Configuration
         {
            // services.AddScoped<IUserService, UserService>();
           services.AddScoped<ICustomerİnfoService,CustomerİnfoService>();
+            services.AddScoped<IOrderInfoServices,OrderInfoServices>();
+            services.AddScoped<ITruckerInfoServices, TruckerInfoServices>();
+
         }
         public static void RepositoryDI(this IServiceCollection services)
         {

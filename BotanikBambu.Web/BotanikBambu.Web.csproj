@@ -13,6 +13,7 @@
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
 		<PackageReference Include="MySql.EntityFrameworkCore" Version="8.0.2" />
 	</ItemGroup>
 
@@ -21,6 +22,11 @@
 		<ProjectReference Include="..\BotanikBambu.Data\BotanikBambu.Data.csproj" />
 		<ProjectReference Include="..\BotanikBambu.Models\BotanikBambu.Models.csproj" />
 		<ProjectReference Include="..\BotanikBambu.Repository\BotanikBambu.Repository.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Areas\Admin\Data\" />
+	  <Folder Include="Areas\Admin\Models\" />
 	</ItemGroup>
 
 </Project>

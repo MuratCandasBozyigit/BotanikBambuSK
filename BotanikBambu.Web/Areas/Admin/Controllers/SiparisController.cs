@@ -2,7 +2,7 @@
 using BotanikBambu.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BotanikBambu.Web.Controllers
+namespace BotanikBambu.Web.Areas.Admin.Controllers
 {
     public class SiparisController : Controller
     {
@@ -22,13 +22,13 @@ namespace BotanikBambu.Web.Controllers
             return Json(new { data = _orderInfoServices.GetAll(orderId) });
         }
 
-        public IActionResult Add(Orderİnfo orderInfo)
+        public IActionResult Add(Truckerİnfo orderInfo)
         {
             return Ok(_orderInfoServices.Add(orderInfo));
 
         }
 
-        public IActionResult Update(Orderİnfo orderInfo)
+        public IActionResult Update(Truckerİnfo orderInfo)
         {
             return Ok(_orderInfoServices.Update(orderInfo));
         }

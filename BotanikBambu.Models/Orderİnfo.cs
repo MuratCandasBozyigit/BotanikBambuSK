@@ -26,6 +26,7 @@ namespace BotanikBambu.Models
 
         public virtual ICollection<Cushionİnfo> Cushionİnfos { get; set; }
         public virtual ICollection<Truckerİnfo> Truckers { get; set; }
+       // public virtual ICollection<Customerİnfo> Customerİnfos { get; set; }
 
     }
 }

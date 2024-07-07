@@ -13,33 +13,34 @@ namespace BotanikBambu.Business.Concrete
 {
     public class OrderInfoServices : IOrderInfoServices
     {
-        private readonly IRepository<Orderİnfo> _orderInfoServices;
+        private readonly IRepository<Truckerİnfo> _repository;
 
-        public OrderInfoServices(IRepository<Orderİnfo> orderInfoServices)
+        public OrderInfoServices(IRepository<Truckerİnfo> repository)
         {
-            _orderInfoServices = orderInfoServices;
+            _repository = repository;
         }
 
-        public Orderİnfo Add(Orderİnfo orderInfo)
+
+        public Truckerİnfo Add(Truckerİnfo orderInfo)
         {
-            return _orderInfoServices.Add(orderInfo);
+            return _repository.Add(orderInfo);
             
         }
 
         public bool Delete(int orderID)
         {
-            return _orderInfoServices.Delete(orderID) is object;
+            return _repository.Delete(orderID) is object;
         }
 
-        public IQueryable<Orderİnfo> GetAll(int orderId)
+        public IQueryable<Truckerİnfo> GetAll(int orderId)
         {
-            return _orderInfoServices.GetAll();
+            return _repository.GetAll();
           
         }
 
-        public Orderİnfo Update(Orderİnfo orderInfo)
+        public Truckerİnfo Update(Truckerİnfo orderInfo)
         {
-            return _orderInfoServices.Update(orderInfo);
+            return _repository.Update(orderInfo);
         }
 
        
